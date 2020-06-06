@@ -13,6 +13,8 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+    
+    let wikipediaURL = "https://en.wikipedia.org/w/api.php"
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -51,8 +53,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
         if let firstResult = results.first {
+            
             self.navigationItem.title = firstResult.identifier.capitalized
-            print(results)
+            self.requestInfo(flowerName: firstResult.identifier)
         }
         
     }
@@ -63,6 +66,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     } catch {
         print(error)
     }
+    }
+    
+    func requestInfo(flowerName: String) {
+        
+        let parameters : [String:String] = [
+        "format" : "json",
+        "action" : "query",
+        "prop" : "extracts",
+        "exintro" : "",
+        "explaintext" : "",
+        "titles" : flowerName,
+        "indexpageids" : "",
+        "redirects" : "1",
+        ]
+        
+        Alamofire.request(wikipediaURL, method: .get, parameters: parameters).responseJSON(completionHandler: { (response) in
+            if response.result.isSuccess {
+                print("Got the wikipedia info")
+                print(response)
+            }
+        })
     }
 }
 
