@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -52,7 +52,6 @@
 				95D262D1B8FC066755D9A0D8 /* Pods-WhatFlowerMT.debug.xcconfig */,
 				C1DAFA964376EBBC73F1D8FD /* Pods-WhatFlowerMT.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
