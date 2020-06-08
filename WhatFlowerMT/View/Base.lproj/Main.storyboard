@@ -15,26 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hwv-ko-Mag">
-                                <rect key="frame" x="0.0" y="88" width="414" height="411"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFl-kd-w2d">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="3eB-3b-cyp">
-                                        <rect key="frame" x="0.0" y="411" width="414" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFl-kd-w2d">
+                                <rect key="frame" x="0.0" y="88" width="414" height="500"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="3eB-3b-cyp">
+                                <rect key="frame" x="0.0" y="596" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VFl-kd-w2d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Ss-GC-kgC"/>
+                            <constraint firstItem="VFl-kd-w2d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jez-6S-MJB"/>
+                            <constraint firstItem="3eB-3b-cyp" firstAttribute="top" secondItem="VFl-kd-w2d" secondAttribute="bottom" id="SAs-4r-iAO"/>
+                            <constraint firstItem="3eB-3b-cyp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bRa-x7-a9j"/>
+                            <constraint firstItem="VFl-kd-w2d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uIP-hA-ajK"/>
+                            <constraint firstAttribute="trailing" secondItem="3eB-3b-cyp" secondAttribute="trailing" id="zTW-U4-I7G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="atg-wu-IoP">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="YO0-0Z-aLH">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cameraPressed:" destination="BYZ-38-t0r" id="djd-xa-e20"/>
                             </connections>
@@ -57,6 +61,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fRK-5T-9Gl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.098713852470000002" green="0.2613527477" blue="0.282548666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

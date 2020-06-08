@@ -55,6 +55,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6D509954248DE79900E105D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D6493B2248C4DB6001D8B72 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D509955248DE7A900E105D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D6493B4248C4DB6001D8B72 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D6493A2248C4DB6001D8B72 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +94,8 @@
 			children = (
 				6D6493AE248C4DB6001D8B72 /* AppDelegate.swift */,
 				6D6493B0248C4DB6001D8B72 /* SceneDelegate.swift */,
-				6D6493B2248C4DB6001D8B72 /* ViewController.swift */,
-				6D6493B4248C4DB6001D8B72 /* Main.storyboard */,
+				6D509954248DE79900E105D1 /* Controller */,
+				6D509955248DE7A900E105D1 /* View */,
 				6D6493BA248C4DB7001D8B72 /* Assets.xcassets */,
 				6D6493BC248C4DB7001D8B72 /* LaunchScreen.storyboard */,
 				6D6493BF248C4DB7001D8B72 /* Info.plist */,
